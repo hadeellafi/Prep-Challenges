@@ -21,9 +21,8 @@
 //  2- The first letters of the firstName and lastName should be capital letter
 
 const objLat = (obj) => {
-    const { firstName, lastName, age, hobby } = obj;
-    const formattedFirstName = obj.firstName.charAt(0).toUpperCase() + firstName.slice(1);
-    const formattedLastName = obj.lastName.charAt(0).toUpperCase() + lastName.slice(1);
+    const formattedFirstName = obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1);
+    const formattedLastName = obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1);
     return `my name is ${formattedFirstName} ${formattedLastName} I am ${obj.age} YO, and I love ${obj.hobby}.`;
 };
 
