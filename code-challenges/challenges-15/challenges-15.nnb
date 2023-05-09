@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function squares(a, b) {\n    let count = 0;\n    let x = Math.ceil(Math.sqrt(a)); \n    while (x * x <= b) {\n      count++;\n      x++;\n    }\n    return count;\n  }"
             ],
             "outputs": []
         }
